@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <title>Contacto Alura</title>
+</head>
+<body>
+    <header>
+        <div class="caja">
+            <h1><img src="../img/logo-blanco.png" alt="logo" class="imglogo"></h1>
+            <nav class="navegacion">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../view/productos.html">Productos</a></li>
+                    <li><a href="../view/contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <form action="">
+            <label for="name">Apellidos y nombres:</label>
+            <input type="text" id="name" placeholder="Digite Nombre y Apellidos" class="input-patron" required>
+            <label for="email">Correo electronico:</label>
+            <input type="email" id="email" placeholder="email@gmail.com" class="input-patron" required>
+            <label for="telefono">Telefono:</label>
+            <input type="tel" id="telefono" placeholder="+99 99999999" class="input-patron" required>
+
+            <label for="">Mensaje:</label>
+            <textarea  class="input-patron"cols="70" rows="10" id="mensaje" required></textarea>
+
+            <fieldset>
+                <legend class="texto">Como le gustaria que lo contactaremos?</legend>
+                <label for="radio-email"><input type="radio" name="contacto" value="email" id="radio-email">Email
+                </label>
+                <label for="radio-whatsapp"><input type="radio" name="contacto" value="whatsapp" id="radio-whatsapp" checked>whatsapp
+                </label>
+                <label for="radio-telegram"><input type="radio" name="contacto" value="telegram" id="radio-telegram">Telegram
+                </label>
+            </fieldset>
+            <fieldset>
+                <!--Hace referencia a un conjunto de datos de un objeto, cosa o persona-->
+                <legend class="texto">En cual horario desea ser atentido?</legend>
+                <select name="" id="" class="input-patron" required>
+                    <option value="">----Selecione un horario----</option>
+                    <option value="morning">Mañana</option>
+                    <option value="afternoon">Tarde</option>
+                    <option value="evening">Noche</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>Seleccione una fecha en especifica.</legend>
+                <input type="date" name="date" id="date" class="input-patron">
+            </fieldset>
+
+            <div>
+                <label class="texto"></label><input type="checkbox" name="novedades" id="novedades" checked>Le gustaria recibir novedades de la Barberia Alura?</label>
+            </div>
+
+            <input type="submit" value="Enviar Formulario" class="btn-enviar">
+        </form>
+        <table border="B">
+            <thead>
+                <tr>
+                    <th>Dia</th>
+                    <th>Horario</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Lunes</td>
+                    <td>08 - 20h</td>
+                </tr>
+                <tr>
+                    <td>Miercoles</td>
+                    <td>08h - 20h</td>
+                </tr>
+                <tr>
+                    <td>Viernes</td>
+                    <td>08h 20h</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Viernes</td>
+                    <td>08h 20h</td>
+                </tr>
+            </tfoot>
+        </table>
+    </main>
+    <footer>
+        <img src="../img/logo-blanco.png" alt="">
+        <p class="copyright">&copy Copyright - Alura & Ageo - 2023</p>
+    </footer>
+</body>
+</html>

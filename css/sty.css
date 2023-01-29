@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    font-family: sans-serif;
+}
+header{
+    background-color: #00003d;
+    padding: 20px 0;
+}
+.imglogo:hover{
+    cursor: pointer;
+    transition: 1s all;
+    transform: rotate(360deg);
+}
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a{
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: #c78c19;
+    text-decoration: underline;
+}/*
+header{
+    background-color: #00003d;
+}
+.caja{
+    position: relative;
+    margin: 0 auto;
+}
+.navegacion{
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+
+.navegacion li{
+    list-style-type: none;
+    display: inline;
+    margin: 0 15PX;
+}
+.navegacion a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+}*/
+
+
+/*footer**/
+footer{
+    background-color: #00003d;
+    padding: 100px;
+    color: #ffffff;
+    text-align: center;
+}
+.copyright{
+    font-size: 25px;
+}
+
+/*main*/
+main{
+    width: 940px;
+    margin: 0 auto;
+}
+form{
+    margin: 40px 0;
+}
+form label, .texto{
+    display: block;
+    margin: 10px;
+    font-size: 20px;
+}
+.input-patron{
+    display: block;
+    margin: 10px;
+    padding: 10px 30px;
+    border-radius: 5px;
+    width: 50%;
+}
+.btn-enviar{
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: blue;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    color: #ffffff;
+    margin: 15px;
+    transition: 1s all; /*dmeora un poco cambiar al hover, modificar all**/
+    cursor: pointer;
+
+}
+.btn-enviar:hover{
+    background-color: #00003d;
+    transform: scale(1.2); /*aumenta en un 20%*/
+    /*transform: rotate(70deg); /*rotar en un 70 grados el elemento*/
+    /*transform: scale(1.2) rotate(70deg);*/
+}
+/*
+inline - 1000;
+id - 100
+class -10
+etiqueta - 1
+si queemos hacer form +p =1+ 1 = 2
+p. test = orange
+p.test = purple**/
+
+/*Transacciones en css**/
+
+/*Ententiendo transformaciones**/
+table{
+    margin: 40px;
+
+}
+thead{
+    background-color: #00003d;
+    color: #ffffff;
+    font-weight: bold;
+}
+thead,th,td{
+    padding: 10px;
+    border:2px solid  #00003d;
+    
+}

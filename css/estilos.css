@@ -1,0 +1,319 @@
+/*Home**/
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+/*header**/
+header{
+    background-color: #00003d;
+    padding: 20px 0;
+}
+.caja{
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+}
+.menu{
+    background-color: #5c5ce4;
+}
+nav{
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+nav ul{
+    list-style: none;
+}
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a{
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: #c78c19;
+    text-decoration: underline;
+}
+
+.imglogo:hover{
+    cursor: pointer;
+    transition: 1s all;
+    transform: rotate(360deg);
+}
+
+/*main del home**/
+.home{
+    background: linear-gradient(#ffffff, #000000);
+}
+
+/*Selectores avanzados*/
+/*.home > p{
+    /*Seleccionamos todos los hijos directos **/
+    /*background-color: #5c5ce4;
+}
+img + p{
+    /*Seleccionamos a los hermanos de img y p**/
+    /*background-color: yellow;
+}
+img ~ p{
+    /*Seleccionamos los hermanos directos de img*/
+    /*background-color: red;
+}
+.principal p:not(#mission){
+    background-color: orange;
+}
+
+/*Sobre la barberia alura**/
+.principal{
+    background-color: #cccccc;
+    border-radius: 10px;
+    margin: 20px 25px;
+}
+
+.titulo-principal{
+    font-size: 25px;
+    color: #00003d;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 25px 0;
+    clear: left;
+    text-shadow: 5px 5px 8px #ffffff;
+}
+.fondo{
+    width: 100%;
+}
+.imgherramientas{
+    width: 160px;
+    /*width: calc(40% - 5px);*/
+    float: left;
+    margin: 25px;
+}
+.parrafo{
+    padding: 10px 40px;
+    text-align: justify;
+    line-height: 1.6em;
+}
+.parrafo strong{
+    color: red;
+}
+/*Nuestra ubicacion*/
+.mapa{
+    margin: 0 auto;
+}
+.texto{
+    color: #00003d;
+}
+/*Insertamos un video*/
+.video{
+    /*text-align: center;*/
+    width: 560px;
+    margin: 1.2em auto
+}
+
+/*Pseudo elementos**/
+.titulo-principal::first-letter{
+    /*font-weight: bold;*/
+    color:#5c5ce4;
+}
+.titulo-principal::before{
+    content: "[";
+}
+.titulo-principal::after{
+    content: "]";
+}
+.parrafo::first-line{
+    font-style: italic;
+}
+/*Diferenciales**/
+.diferenciales{
+    background-color: #CCCCCC;
+    border-radius: 10px;
+    margin: 20px auto;
+}
+.contenido-diferenciales{
+    margin: 10px 30px;
+}
+.items{
+    font-style: italic;
+    line-height: 2.5;
+}
+.items::before{
+    content: "☻ ";
+}
+/*Pseudoclases**/
+.items:first-child{
+    font-weight: bold;
+}
+.items:nth-child(3n){ /*2n la lista de pares - 3n los impares*/
+    font-weight: bold;
+}
+.diferenciales ul{
+    display: inline-block;
+    vertical-align: top;
+    width: 40%;
+}
+.imgdiferenciales{
+    width: 60%;
+    border-radius:10px ;
+    margin-bottom: 10px;
+}
+/*opacity y sombreado*/
+.imgdiferenciales:hover{
+    opacity:0.5;
+    transition: 400ms;
+    /* x y difuminado expansion color*/
+    box-shadow: 5px 5px 10px 10px #00003d;
+}
+
+/*footer**/
+footer{
+    background-color: #00003d;
+    padding: 100px;
+    color: #ffffff;
+    text-align: center;
+}
+.copyright{
+    font-size: 25px;
+}
+/*main del producto**/
+.productos{
+    width: 940px;
+    margin: 25px auto;
+}
+.productos li{
+    border: 3px solid #000000;
+    display: inline-block;
+    border-radius:8px;
+    text-align: center;
+    background-color: #ccc;
+    box-sizing: border-box;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+}
+.productos h2{
+    font-size: 35px;
+    font-weight: bold;
+    margin: 15px;
+}
+.producto-descripcion{
+    margin: 25px;
+    font-size: 22px;
+}
+.producto-precio{
+    font-size: 30px;
+    font-weight: bold;
+    color: #5c5ce4;
+}
+
+.productos li:hover{
+    border-color:#c78c19;
+}
+
+.productos li:active{
+    border-color:#088c19;
+}
+
+.productos li:hover h2{
+    font-size: 45px;
+}
+
+
+/*main del contacto**/
+
+form{
+    margin: 40px 0;
+}
+form label, .texto{
+    display: block;
+    margin: 10px;
+    font-size: 20px;
+}
+.input-patron{
+    display: block;
+    margin: 10px;
+    padding: 10px 30px;
+    border-radius: 5px;
+    width: 50%;
+}
+.btn-enviar{
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: blue;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    color: #ffffff;
+    margin: 15px;
+    transition: 1s all; /*dmeora un poco cambiar al hover, modificar all**/
+    cursor: pointer;
+
+}
+.btn-enviar:hover{
+    background-color: #00003d;
+    transform: scale(1.2); /*aumenta en un 20%*/
+    /*transform: rotate(70deg); /*rotar en un 70 grados el elemento*/
+    /*transform: scale(1.2) rotate(70deg);*/
+}
+/*
+inline - 1000;
+id - 100
+class -10
+etiqueta - 1
+si queemos hacer form +p =1+ 1 = 2
+p. test = orange
+p.test = purple**/
+
+/*Transacciones en css**/
+
+/*Ententiendo transformaciones**/
+table{
+    margin: 40px;
+
+}
+thead{
+    background-color: #00003d;
+    color: #ffffff;
+    font-weight: bold;
+}
+thead,th,td{
+    padding: 10px;
+    border:2px solid  #00003d;
+}
+
+@media screen and (max-width:480px){
+    /*los estilos aplicados seran hasta un maximo de 480px*/
+
+    nav{
+        position: static;
+    }
+    .caja, .video{
+        width: auto;
+    }
+    .diferenciales ul, .imgdiferenciales{
+        width: 100%;
+    }
+}
+/*Siglas	Nombre	Resolución
+SD	Standard Definition	640 x 480 píxeles
+qHD	Quarter of High Definition	960 x 540 píxeles
+HD	High Definition	1.280 x 720 píxeles
+FHD	Full HD o Full High Definition	1.920 x 1.080 píxeles*/
+@media screen and (max-width:1080px){
+    header{
+        width: auto;
+    }
+    .caja, .productos{
+        width: 100%;
+    }
+}
